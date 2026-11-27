@@ -1,11 +1,28 @@
-let buttons = document.querySelectorAll('.butt');
+// const buttons = document.querySelectorAll('.butt');
+// toggles hidden class on associated paragraphs for buttons
+// console.log(buttons.length);
+// console.log(buttPara.length);
 
-let buttPara = document.querySelectorAll('.butt > p');
-console.log(buttons.length);
-console.log(buttPara.length);
-buttons.addEventListener('mouseenter',()=>{
-    buttPara.classList.toggle('hidden');
+
+// let containsButtons = document.querySelector("#shirtCenter");
+// containsButtons.addEventListener("click", () => {
+//     let buttons = document.querySelectorAll(".butt");
+//     buttons.forEach((butt) => {
+//         butt.classList.toggle("pos");
+//     });
+
+// });
+
+
+
+
+let themesButton = document.querySelector("#themesButton");
+console.log(themesButton);
+let buttonOptions = document.getElementById("#collapsed");
+// let buttonOptions = document.querySelectorAll("#collapsed > div");
+themesButton.addEventListener("click", function() {
+    
+    buttonOptions.style.opacity ="1";
+    // buttonOptions.style.opacity ="1";
 });
-buttons.addEventListener('mouseleave',()=>{
-    buttPara.classList.toggle('hidden');
-});
+

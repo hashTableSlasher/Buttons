@@ -4,19 +4,61 @@
 <script src="app.js" defer></script>
 </head>
 <body>
-    <header></header>
+    <header>
+        Header
+    </header>
     <main>
-        <div id="shirtCenter">
-            <div class="butt" id="dark"><img src="imgs/buttonSmall.png" alt=""><p class="hidden">Dark Mode</p></div>
-            <div class="butt" id="contrast"><img src="imgs/buttonSmall.png" alt=""><p class="hidden">High Contrast</p></div>
-            <div class="butt" id="lowCon"><img src="imgs/buttonSmall.png" alt=""><p class="hidden">Low Contrast</p></div>
-            <div class="butt" id="dyslex"><img src="imgs/buttonSmall.png" alt=""><p class="hidden">Dyslexia Friendly</p></div>
-            <div class="butt" id="bigFont"><img src="imgs/buttonSmall.png" alt=""><p class="hidden">Font Larger</p></div>
-            <div class="butt" id=""><img src="imgs/buttonSmall.png" alt=""><p class="hidden"></p></div>
-            <div class="butt" id=""><img src="imgs/buttonSmall.png" alt=""><p class="hidden"></p></div> 
-        </div>
+        <!-- <h1>Themes</h1> -->
+        <!-- <div id="shirtCenter">
+            <button class="butt pos" id="dark"><img src="imgs/buttonSmall.png" alt=""><p >Dark Mode</p></button>
+            <button class="butt pos" id=""><img src="imgs/buttonSmall.png" alt=""><p>Light Mode</p></button>
+            <button class="butt pos" id="contrast"><img src="imgs/buttonSmall.png" alt=""><p>High Contrast</p></button>
+            <button class="butt pos" id="lowCon"><img src="imgs/buttonSmall.png" alt=""><p>Low Contrast</p></button>
+            <button class="butt pos" id="dyslex"><img src="imgs/buttonSmall.png" alt=""><p>Dyslexia Friendly</p></button>
+            <button class="butt pos" id="bigFont"><img src="imgs/buttonSmall.png" alt=""><p>Font Larger</p></button>
+        </div> -->
+        <form action="">
+                <button id="themesButton" aria-label="themes button, see options by clicking">Accessibility Theme</button>
+            <fieldset id="collapsed">
+                <div>
+                     <div>
+                        <img src="imgs/buttonSmall.png" alt="" >
+                        <input type="radio" name="theme" id="light">
+                        <label for="theme">Light</label>
+                    </div>
+                        
+                    <div>
+                            <img id="dark" src="imgs/blackerButtonsmalCopy.png"  alt="" >
+                            <input type="radio" name="theme" id="dark">
+                            <label for="theme">Dark</label>
+                    </div>
+                    <div>
+                            <img id="lowContrast" src="imgs/blackerButtonsmalCopy.png"  alt="" >
+                            <input type="radio" name="theme" id="lowContrast">
+                            <label for="theme">low Contrast</label>
+                    </div>
+                    <div>
+                            
+                            <img id="highContrast"src="imgs/contrastButton.png" alt="" >
+                            <input type="radio" name="theme" id="contrast">
+                            <label for="theme">High Contrast</label>
+                    </div>
+                
+                    <div>
+                            <img src="imgs/buttonSmall.png" alt="" >
+                            <input type="radio" name="theme" id="dyslexia">
+                            <label for="theme" id="Dyslexia">Dyslexia Friendly</label>
+                    </div>
+                    <div>
+                            <img src="imgs/buttonSmall.png" alt="" >
+                            <input type="radio" name="theme" id="glasses">
+                            <label for="theme">Larger Font</label>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
     </main>
-    <footer></footer>
+    <footer>Footer</footer>
 </body>
 
 

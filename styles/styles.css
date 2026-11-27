@@ -1,17 +1,144 @@
-.butt {
-    display:flex;
-    align-items: center;
-    gap: 20px;
-}
+/* 
 .hidden{
     display:none;
 }
 
-.butt > p:hover{
-    display: none;
-}
-.shirtCenter{
+
+#shirtCenter{
     background-color: #F5EAD7 ;
-    width: 80px;
-    border: black 1px solid;
+    width: 100px; 
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+   
 }
+.butt {
+    display: grid;
+    justify-items: center;
+    width:100%;
+   
+}
+.butt p{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.butt:hover + p {
+    opacity: 1;
+}
+.butt img:hover + p {
+    opacity: 1;
+}
+.pos {
+    position:absolute;
+    
+} */
+
+:root{
+    --forest:  #2E4D2D;
+    --coastal: #5B8C88;
+    --canvas: #F5EAD7;
+    --terracotta: #C46A4B;
+    --charcoal: #2B2B2B;
+    --light-charcoal: #555555;
+    --background: #ffffff; 
+    
+}
+body{
+    background-color: var(--background);
+    color:var(--charcoal);
+}
+form{
+    position:relative;
+    margin-top: 100px;
+    width:150px;
+}
+
+/* makes information a 2 column grid, the direct children are divs containing labels and buttons separately */
+
+/* styles children direct children to look like sides of shirt */
+fieldset > div{
+    display:grid;
+    gap:10px;
+    border-radius: 9px;
+    border:1px black solid;
+    background-color: #F5EAD7;
+    justify-items: left;
+    opacity:0;
+}
+/* makes all children inside inner divs absolute: this served the purpose of overlaying radio buttons onto images of buttons */
+form div div  *{
+    position: absolute;
+}
+
+
+
+
+label{
+    position:relative;
+    /* width:100px; */
+    left:70px;
+    top:9px;
+    /* opacity: 0; */
+    
+}
+/* makes radios the size of button image */
+
+input[type="radio"]{
+    appearance: none;
+    width:54px;
+    height: 54px;
+    outline: 1.5px solid black;
+    border-radius: 50%;
+    
+    
+    
+    
+}
+img{background: var(--radio-color);
+    border-radius: 50%;
+    top:1.5px;
+    left:1.5px;
+}
+#light{
+    --radio-color: rgba(255,255,255,.6);
+    
+}
+#dark{
+    background-color:rgba(5,5,5,.5);
+}
+#lowContrast{
+ --radio-color: rgba(5,5,5,.5);
+}
+
+#highContrast{
+    --radio-color:rgba(20,245,226,1);
+}
+
+
+input[type="radio"]:hover +  label{
+    opacity: 1;
+    cursor:pointer;
+}
+input[type="radio"]:hover{
+    box-shadow: 3px 3px 3px black;
+    cursor:pointer;
+}
+
+form div div{
+    display:grid;
+    width:54px;
+    height:54px;
+    position:relative; 
+    justify-items: center;
+    align-items: center;
+}
+fieldset{
+    border:0;
+}
+
+#themesButton{
+    width:54px;
+    height:54px;
+}
+
+
