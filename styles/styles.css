@@ -1,0 +1,17 @@
+.butt {
+    display:flex;
+    align-items: center;
+    gap: 20px;
+}
+.hidden{
+    display:none;
+}
+
+.butt > p:hover{
+    display: none;
+}
+.shirtCenter{
+    background-color: #F5EAD7 ;
+    width: 80px;
+    border: black 1px solid;
+}
